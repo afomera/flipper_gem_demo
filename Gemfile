@@ -87,3 +87,6 @@ gem "sidekiq", "~> 6.2"
 gem "sitemap_generator", "~> 6.1"
 gem "whenever", require: false
 gem "responders", github: "heartcombo/responders", branch: "main"
+
+gem "flipper-active_record", "~> 0.23.1"
+gem "flipper-ui", "~> 0.23.1"

@@ -1,5 +1,7 @@
 <h1>Welcome to Jumpstart!</h1>
 
-<p class="lead">Hey this is the paragraph we currently show</p>
-
-<p class="lead">👋 This is the paragraph I want to show if the feature flag is enabled!</p>
+<% if Flipper.enabled?(:new_homepage_copy, current_user) %>
+  <p class="lead">👋 This is the paragraph I want to show if the feature flag is enabled!</p>
+<% else %>
+  <p class="lead">Hey this is the paragraph we currently show</p>
+<% end %>
